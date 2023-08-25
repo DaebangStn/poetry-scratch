@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "poetry-scratch"
+name = "poetry_scratch"
 version = "0.1.0"
 description = ""
 authors = ["daebangstn <gunho1107@naver.com>"]
@@ -8,6 +8,13 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 requests = "^2.31.0"
+pytest = "^7.4.0"
+
+
+[tools.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
 
 
 [build-system]
